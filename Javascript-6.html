@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript-6</title>
+</head>
+
+<body>
+
+    <!--JavaScript For Loop:-->
+    <h2>JavaScript For Loop:-</h2>
+    <h5 id="123"></h5>
+    <script>
+        const cars = ["BMW", "Kia", "Ford", "Swift", "Punch", "Nexon", "Thar", "Audi", "Fiat", "Venue"];
+        let txt = "";
+        for (let i = 0; i < cars.length; i++) {
+            txt += cars[i] + "<br>";
+        }
+        document.getElementById("123").innerHTML = txt;
+    </script>
+
+    <h5 id="33"></h5>
+    <script>
+        let text3 = "";
+        for (let i = 0; i < 11; i++) {
+            text3 += "The Number is " + i + "<br>";
+        }
+        document.getElementById("33").innerHTML = text3;
+    </script>
+
+
+    <!--JavaScript While Loop:-->
+    <h2>JavaScript While Loop:-</h2>
+    <h5 id="456"></h5>
+    <script>
+        let text = "";
+        let i = 0;
+        while (i < 16) {
+            text += "The Number is " + i + "<br>"; i++;
+        }
+        document.getElementById("456").innerHTML = text;
+    </script>
+
+
+    <!--JavaScript For In:-->
+    <!--For In Loop-Object:- x consider Properties-->
+    <h2>JavaScript For In:-</h2>
+    <h2>For in loop:- Object:- x consider properties.</h2>
+    <h5 id="789"></h5>
+    <script>
+        const person = { fname: "Tanvi", Mname: "Alpeshbhai", lname: "Vadodariya:-", age: 21 };
+        let txt2 = "";
+        for (let x in person) {
+            txt2 += person[x] + " ";
+        }
+        document.getElementById("789").innerHTML = txt2;
+    </script>
+
+    <!--For In Loop-Array:- x consider Index-->
+    <h2>For in loop:- Array:- x consider Index.</h2>
+    <h5 id="demo"></h5>
+    <script>
+        const numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+        let txt3 = "";
+        for (let x in numbers) {
+            txt3 += numbers[x] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt3;
+    </script>
+
+
+    <!--JavaScript For Of-->
+    <!--For of Loop-Array:- x consider Element-->
+    <h2>JavaScript For Of:-</h2>
+    <h2>For of Loop-Array:- x consider Element.</h2>
+    <h5 id="111"></h5>
+    <script>
+        const flowers = ["Rose", "Lotus", "Tulip", "Sunflower", "Marigold", "Jasmine", "Lily"];
+        let txt4 = "";
+        for (let x in flowers) {
+            txt4 += flowers[x] + "<br>";
+        }
+        document.getElementById("111").innerHTML = txt4;
+    </script>
+
+    <h5 id="22"></h5>
+    <script>
+        let language = "HTML CSS BOOTSTRAP JAVASCRIPT";
+        let text2 = "";
+        for (let x of language) {
+            text2 += x + "<br>";
+        }
+        document.getElementById("22").innerHTML = text2;
+    </script>
+
+    <!--Date Methods-->
+    <h1>Date Methods:-</h1>
+    <h5 id="d"></h5>
+    <h5 id="44"></h5>
+    <h5 id="s"></h5>
+    <h5 id="45"></h5>
+    <script>
+        const d = new Date();
+        console.log(d);
+        document.getElementById("d").innerHTML = d;
+        console.log(d.getFullYear());
+        document.getElementById("44").innerHTML = d.getDate();
+
+
+        const s = new Date("2022-07-15");
+        s.setDate("25");
+        console.log(s);
+        document.getElementById("s").innerHTML = s;
+        console.log(s.getDate());
+        document.getElementById("45").innerHTML = s.getFullYear();
+    </script>
+
+    <!--JavaScript if, else, and else if-->
+    <h4 id="tanvi">Good Evening!</h4>
+    <script>
+        if (new Date().getHours() < 18) {
+        }
+        document.getElementById("tanvi").innerHTML = "Good Day!";
+
+    </script>
+
+
+</body>
+
+</html>

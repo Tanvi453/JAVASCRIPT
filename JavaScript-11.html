@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC_syGuboyePcc4x_b0FcgmMPBo1-s0X6iLUTUhQzPHWSF3Xq6cJv9NbLl60gMV9OFXOk&usqp=CAU">
+    <style>
+        table,
+        td,
+        th {
+            border: 1px black solid;
+            padding: 10px;
+        }
+
+        ::placeholder {
+            color: rgb(208, 205, 205);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div
+        style="background-image: url(https://m.media-amazon.com/images/I/71+17bVYHxL._AC_UF1000,1000_QL80_.jpg); background-size: cover; height: 100vh; width: 100%; display: flex; flex-direction: column; gap: 50px; justify-content: center; align-items: center;">
+
+        <div
+            style="background-color: rgb(193, 7, 69, 0.8); display: flex; flex-direction: column; gap: 50px; justify-content: center; align-items: center; height: 700px; width: 700px; border-radius: 100px; color: white; padding: 20px;">
+
+            <div
+                style="display: flex; flex-direction: column; gap: 40px; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;">
+
+                <div style="display: flex; gap: 10px;">
+                    <lable for="Fname">Full Name:</lable>
+                    <input type="text" id="Fname" name="Fname" value="" placeholder="Enter your Full Name" required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <label for="DOB"> Date of Birth: </label>
+                    <input type="date" id="DOB" name="DOB" value="" required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <label for="Age">Age:</label>
+                    <input type="number" id="Age" name="Age" placeholder="Enter Your Age" required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <lable for="Address"> Address: </lable>
+                    <input type="text" id="Address" name="Address" value="" placeholder="Enter Your Address" required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <lable for="Phone">Phone Number:</lable>
+                    <input type="tel" id="Phone" name="Phone" value="" placeholder="Enter your Phone Number" required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <lable for="Email">E-mail:</lable>
+                    <input type="Email" id="Email" name="Email" value="" placeholder="Enter your Email" required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                    <label for="Password">Password:</label>
+                    <input type="password" id="Password" name="Password" value="" placeholder="Enter Your Password"
+                        required
+                        style="background-color: transparent; border: 1px white solid; border-radius: 10px; width: 400px; color: white;">
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <button onclick="Form()"
+                        style="height: 50px; width: 200px; background-color: transparent; color: white; font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif; border: 1px white solid; border-radius: 20px;">Submit</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="display: flex; gap: 10px;">
+        <p id="pinal" style="font-weight: bold; color: rgb(245, 9, 166);"></p>
+        <p id="tanvi"></p>
+    </div>
+
+    <div style="display: flex; gap: 10px; justify-content: center; margin-top: 30px;">
+
+        <input type="search" id="search" name="search" value=""> <button onclick="searchData()"> <svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg> </button>
+        
+
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 5%;">
+
+        <table id="myTable">
+
+            <thead>
+                <th>Full Name: <button onclick="sortbyFname()" type="button" style="margin-top: 30px;">Sort</button>
+                </th>
+                <th>Date of Birth: <button onclick="sortbyDOB()" type="button" style="margin-top: 30px;">Sort</button>
+                </th>
+                <th>Age: <button onclick="sortbyAge()" type="button" style="margin-top: 30px;">Sort</button></th>
+                <th>Address: <button onclick="sortbyAddress()" type="button" style="margin-top: 30px;">Sort</button>
+                </th>
+                <th>Phone Number: <button onclick="sortbyPhone()" type="button" style="margin-top: 30px;">Sort</button>
+                </th>
+                <th>E-mail: <button onclick="sortbyEmail()" type="button" style="margin-top: 30px;">Sort</button></th>
+                <th>Password: <button onclick="sortbyPassword()" type="button" style="margin-top: 30px;">Sort</button>
+                </th>
+            </thead>
+
+            <tbody id="tbl"></tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="./JavaScript-11.js"></script>
+</body>
+
+</html>

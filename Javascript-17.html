@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task - time</title>
+</head>
+
+<body style="display: flex; flex-direction: column; gap: 30px;">
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 20px;">
+        <div>
+            <label for="time">Time-1:</label>
+            <input type="datetime-local" id="time1" name="time1" value="">
+        </div>
+        <div>
+            <label for="time">Time-2:</label>
+            <input type="datetime-local" id="time2" name="time2" value="">
+        </div>
+        <div>
+            <button onclick="Form()" type="button">Submit</button>
+        </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 20px;">
+        <div>
+            <label for="time3">Time-1:-</label><br>
+            <input type="time" id="time3" name="time3" value="">
+        </div>
+        <div>
+            <label for="time4">Time-2:-</label><br>
+            <input type="time" id="time4" name="time4" value="">
+        </div>
+        <div>
+            <button onclick="mytime()">Submit</button>
+        </div>
+    </div>
+    <h1 id="time"></h1>
+
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 20px;">
+        <div>
+            <label for="date1">Date-1:-</label><br>
+            <input type="date" id="date1" name="date1" value="">
+        </div>
+        <div>
+            <label for="date2">Date-2:-</label><br>
+            <input type="date" id="date2" name="date2" value="">
+        </div>
+        <div>
+            <button onclick="mydate()">Submit</button>
+        </div>
+    </div>
+    <h1 id="date"></h1>
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 20px;">
+        <div>
+            <label for="day">Day:-</label><br>
+            <input type="number" id="day" name="day" value="">
+        </div>
+        <div>
+            <button onclick="myday()">Submit</button>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 20px;">
+        <div>
+            <label for="date3">Date:-</label><br>
+            <input type="date" id="date3" name="date3" value="">
+        </div>
+        <div>
+            <button onclick="Forms()">Submit</button>
+        </div>
+    </div>
+
+    <div>
+        <label for="title">Date:-</label>
+        <input type="text" name="datee" id="datee" placeholder="dd" required="required" minlength="1" maxlength="2">
+    </div>
+    <div>
+        <label for="title">Month:-</label>
+        <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2">
+    </div>
+    <div>
+        <label for="title">Year:-</label>
+        <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4">
+    </div>
+
+    <div>
+        <button onclick="Age()">Submit</button>
+    </div>
+
+    <h1 id="age"></h1>
+    <script src="./Javascript-17.js"></script>
+</body>
+
+</html>

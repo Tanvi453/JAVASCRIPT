@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Form with Table Print</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px black solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div
+        style="background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-hd-pastel-pink-gold-marble-background-image_2440700.jpg); background-repeat: no-repeat; background-size: cover; height: 900px; width: 100%; display: flex; flex-direction: column; gap: 50px; justify-content: center; align-items: center;">
+
+        <div
+            style="background-color: rgba(224, 127, 164, 0.3); height: 600px; width: 600px; border-radius: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 50px;">
+
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+
+                <lable for="Fname"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 20px;">
+                    Full
+                    Name:</lable>
+                <input type="text" id="Fname" name="Fname" value="" placeholder="Enter your Full Name"
+                    style="background-color: transparent; border: 1px black solid; border-radius: 5px; width: 400px; color: black; height: 30px;"
+                    required>
+
+
+                <label for=" Age"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 20px;">Age:</label>
+                <input type="number" id="Age" name="Age" placeholder="Enter Your Age"
+                    style="background-color: transparent; border: 1px black solid; border-radius: 5px; width: 400px; color: black; height: 30px;"
+                    required>
+
+
+                <lable for="Phone"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 20px;">
+                    Phone
+                    Number:</lable>
+                <input type="tel" id="Phone" name="Phone" value="" placeholder="Enter your Phone Number"
+                    style="background-color: transparent; border: 1px black solid; border-radius: 5px; width: 400px; color: black; height: 30px;"
+                    required>
+
+
+                <lable for="Email"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 20px;">
+                    E-mail:</lable>
+                <input type="Email" id="Email" name="Email" value="" placeholder="Enter your Email"
+                    style="background-color: transparent; border: 1px black solid; border-radius: 5px; width: 400px; color: black; height: 30px;"
+                    required>
+
+
+                <label for="password"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 20px;">Password:</label>
+                <input type="password" id="password" name="password" value="" placeholder="Enter Your Password"
+                    style="background-color: transparent; border: 1px black solid; border-radius: 5px; width: 400px; color: black; height: 30px;"
+                    required>
+
+
+                <button onclick="Form()"
+                    style="height: 50px; width: 200px; background-color: transparent; color: black; font-size: 35px; font-family: Georgia, 'Times New Roman', Times, serif; border: 1px black solid; border-radius: 20px; margin-top: 20px;"><b>Submit</b></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COLORFULL CHARACTER:- -->
+    <div style="display: flex;">
+        <h1 id="tanvi"></h1>
+        <h1 id="tanvii" style="color: rgb(249, 4, 122);"></h1>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 5%;">
+
+        <table>
+
+            <thead>
+                <th>Full Name:</th>
+                <th>Age:</th>
+                <th>Phone Number:</th>
+                <th>E-mail:</th>
+                <th>Password:</th>
+            </thead>
+
+            <tbody id="tbl"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="./Javascript-10.js"></script>
+</body>
+
+</html>

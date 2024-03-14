@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sorting-2</title>
+    <style>
+        th,
+        td,
+        table {
+            border: 1px black solid;
+            padding: 10px;
+        }
+
+        option {
+            background-color: transparent !important;
+            color: black !important;
+        }
+        
+
+        table {
+            border-collapse: collapse;
+            margin: 2em 1em;
+        }
+
+        td,
+        th {
+            padding: .2em .8em;
+            border: 1px solid black;
+        }
+
+        thead {
+            background: #c33355;
+            color: white;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://www.bhmpics.com/downloads/pink-flower-images-background-Wallpapers/45.flowers-composition-frame-made-of-pink-flowers-on-pastel-pink-background-valentines-day.jpg); background-size: cover; background-repeat: no-repeat; height: 900px;">
+
+    <div style="display: flex; flex-direction: column; gap: 50px; align-items: center; margin-top: 5%;">
+
+        <div style="display: flex; flex-direction: column;">
+            <label for="Fname"
+                style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color: black;">Full
+                Name:</label>
+            <input type="text" id="Fname" name="Fname" value="" placeholder="Full Name"
+                style="height: 40px; width: 400px; border-radius: 10px; background-color: transparent; color: black; font-weight: bold;"
+                required />
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+            <label for="Email"
+                style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color: black;">E-mail:</label>
+            <input type="text" id="Email" name="Email" value="" placeholder="E-mail"
+                style="height: 40px; width: 400px; border-radius: 10px; background-color: transparent; color: black; font-weight: bold;"
+                required />
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+            <label for="password"
+                style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; font-size: 25px; color: black;">Password:</label>
+            <input type="password" id="password" name="password" value="" placeholder="Password"
+                style="height: 40px; width: 400px; border-radius: 10px; background-color: transparent; color: black; font-weight: bold;"
+                required />
+        </div>
+
+        <button onclick="Form()" type="button"
+            style="height: 50px; width: 200px; border-radius: 10px; background-color: #c33355; color: white;  font-size: 22px; font-weight: bold;">Submit</button>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 50px; margin-top: 50px;">
+
+        <div>
+            <select id="tanvi"
+                style="height: 30px; width: 150px; background-color: transparent; color: black; font-size: 16px; font-weight: bold;">
+                <option value="x">Full Name</option>
+                <option value="y">E-mail</option>
+                <option value="z">Password</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="button" onclick="sorting()"
+                style="height: 30px; width: 150px; background-color: #c33355; color: white; font-size: 16px; font-weight: bold;">Sort</button>
+        </div>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+
+        <table>
+
+            <thead>
+
+                <th>Full Name:</th>
+                <th>E-mail:</th>
+                <th>Password:</th>
+
+            </thead>
+
+            <tbody id="myTable"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="Javascript-19.js"></script>
+</body>
+
+</html>
